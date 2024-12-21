@@ -3,7 +3,7 @@
 }
 
 body {
-  max-height: 100vh;
+  height: 100vh;
   display: grid;
   margin: 0;
   grid-template-columns: 1fr 4fr;
@@ -171,8 +171,9 @@ div.pages svg {
   position: relative;
   z-index: -1;
   display: grid;
-  grid-template-columns: 4fr 1fr;
+  grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr 1fr;
+  gap: 1.5rem;
 }
 
 #cards {
@@ -182,14 +183,15 @@ div.pages svg {
   display: flex;
   flex-direction: column;
   justify-content: left;
-  padding: 1.5rem;
-  gap: 10px;
+  margin-top: 1.5rem;
+  margin-left: 1.5rem;
+  gap: 1.5rem;
 }
 
 #projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .card {
@@ -221,12 +223,13 @@ div.cardInfo p {
   fill: black;
 }
 
-#announcements {
+.announcements {
   display: flex;
   flex-direction: column;
   justify-content: left;
-  padding: 1.5rem;
-  gap: 10px;
+  margin-top: 1.5rem;
+  margin-right: 1.5rem;
+  gap: 1.5rem;
   font-size: 1.3rem;
   font-weight: 500;
 }
@@ -277,4 +280,8 @@ div.cardInfo p {
 
 input[type="text"] {
   font-size: 1rem;
+}
+
+#noMargin {
+  margin-top: 0px;
 }
