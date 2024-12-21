@@ -13,14 +13,57 @@ body {
 #header {
   background-color: white;
   grid-column: 2/3;
+  display: grid;
+}
+
+#search {
+  background-color: gray;
+}
+
+#profile {
+  background-color: green;
 }
 
 #sidebar {
-  background-color: steelblue;
+  background-color: #0ea5e9;
   grid-row: 1/-1;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  gap: 50px;
+  padding: 1.5rem;
 }
 
-#main {
-  background-color: gray;
-  grid-row: 2/3;
+.pages,
+#dashboard {
+  display: flex;
+  gap: 10px;
+}
+
+svg {
+  height: 3rem;
+  fill: white;
+}
+
+.pages {
+  font-size: 1.3rem;
+}
+
+#dashboard {
+  font-size: 1.8rem;
+}
+
+.icons {
+  display: grid;
+  gap: 20px;
+}
+
+.iconText {
+  align-content: center;
+}
+
+div.pages svg {
+  height: 2rem;
 }
