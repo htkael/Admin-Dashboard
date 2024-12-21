@@ -68,6 +68,7 @@ svg#profilePic {
   display: flex;
   justify-content: space-between;
   margin-left: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 #profile > * {
@@ -157,4 +158,67 @@ svg {
 
 div.pages svg {
   height: 2rem;
+}
+
+#main {
+  background-color: #e2e8f0;
+  position: relative;
+  z-index: -1;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+#cards {
+  grid-row: 1/-1;
+  font-size: 1.3rem;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding: 1.5rem;
+  gap: 10px;
+}
+
+#projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-left: 8px solid #facc15;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.15);
+}
+
+div.cardInfo h1 {
+  font-size: 1rem;
+}
+
+div.cardInfo p {
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.63);
+  font-weight: 500;
+}
+
+.cardIcons {
+  align-self: end;
+}
+
+.card svg {
+  height: 1.5rem;
+  fill: black;
+}
+
+#announcements {
+  background-color: yellow;
+}
+
+#trending {
+  background-color: green;
 }
