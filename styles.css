@@ -1,0 +1,26 @@
+* {
+  font-family: "Roboto";
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  margin: 0;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 4fr;
+}
+
+#header {
+  background-color: white;
+  grid-column: 2/3;
+}
+
+#sidebar {
+  background-color: steelblue;
+  grid-row: 1/-1;
+}
+
+#main {
+  background-color: gray;
+  grid-row: 2/3;
+}
