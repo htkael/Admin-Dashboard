@@ -14,10 +14,29 @@ body {
   background-color: white;
   grid-column: 2/3;
   display: grid;
+  grid-template-rows: 1fr 1fr;
 }
 
 #search {
   background-color: gray;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding: 2rem;
+  gap: 50px;
+}
+
+#leftSearch {
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+  gap: 0px;
+}
+
+input {
+}
+
+#rightSearch {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 #profile {
@@ -45,6 +64,7 @@ body {
 svg {
   height: 3rem;
   fill: white;
+  max-width: 3rem;
 }
 
 .pages {
